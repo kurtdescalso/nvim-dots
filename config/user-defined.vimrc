@@ -4,26 +4,13 @@ set number
 set shiftwidth=4
 set tabstop=4
 
-" # Color
-" let g:gruvbox_contrast_dark = 'hard'
-" colorscheme gruvbox
+" For Neovim 0.1.3 and 0.1.4
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
-" set t_Co=256
-" colorscheme PaperColor
-" set background=dark
-
-" set background='#2A2331'
-" let g:mode = 'focus'
-" colorscheme amora
-
-" let g:airline_theme = 'afterglow'
-colorscheme afterglow
-
-let g:lightline = {
-	\ 'colorscheme': 'simpleblack',
-	\ }
-set noshowmode " hide '-- INSERT --' below statusline (redundant)
-
+" Or if you have Neovim >= 0.1.5
+if (has("termguicolors"))
+  set termguicolors
+endif
 
 nnoremap <SPACE> <Nop>
 let mapleader = " "

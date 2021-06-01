@@ -22,8 +22,10 @@ let g:lua_tree_show_icons = {
 " You can edit keybindings be defining this variable
 " You don't have to define all keys.
 " NOTE: the 'edit' key will wrap/unwrap a folder and open a file
+" Override L
+nmap L <Nop>
 let g:lua_tree_bindings = {
-    \ 'edit':            ['o'],
+    \ 'edit':            ['<S-l>','o'],
     \ 'edit_vsplit':     '<CR>',
     \ 'edit_split':      '<C-x>',
     \ 'edit_tab':        '<C-t>',

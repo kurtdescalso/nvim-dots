@@ -3,7 +3,7 @@
 " diagnostics appear/become resolved.
 if has("nvim-0.5.0") || has("patch-8.1.1564")
   " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
+  set signcolumn=yes
   nnoremap <nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
   nnoremap <nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
   inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -32,7 +32,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window.
@@ -55,4 +55,22 @@ nmap <leader>f  <Plug>(coc-format-selected)
 " Add (Neo)Vim's native statusline support.
 " NOTE: Please see `:h coc-status` for integrations with external plugins that
 " provide custom statusline: lightline.vim, vim-airline.
+function! StatusDiagnostic() abort
+  let info = get(b:, 'coc_diagnostic_info', {})
+  if empty(info) | return '' | endif
+  let msgs = []
+  if get(info, 'error', 0)
+    call add(msgs, '× ' . info['error'])
+  endif
+  if get(info, 'warning', 0)
+    call add(msgs, '• ' . info['warning'])
+  endif
+  return join(msgs, ' ') . ' ' . get(g:, 'coc_status', '')
+endfunction
+
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+set statusline^=%{FugitiveStatusline()}
+set statusline^=%{StatusDiagnostic()}
+
+" Golang format and imports
+autocmd BufWritePre *.go :silent :call CocAction('runCommand', 'editor.action.organizeImport')
