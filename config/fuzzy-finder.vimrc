@@ -21,7 +21,9 @@ require('telescope').setup{
 
         -- Add up multiple actions
         -- ["<cr>"] = actions.select_default + actions.center,
-        ["<cr>"] = actions.select_vertical + actions.center,
+        ["<cr>"] = actions.select_default + actions.center,
+        ["<c-x>"] = actions.select_horizontal + actions.center,
+        ["<c-v>"] = actions.select_vertical + actions.center,
 
         -- You can perform as many actions in a row as you like
         -- ["<cr>"] = actions.select_default + actions.center + my_cool_custom_action,
