@@ -8,4 +8,4 @@ source ~/.config/nvim/config/syntax.vimrc
 source ~/.config/nvim/config/snippets.vimrc
 source ~/.config/nvim/config/autocloser.vimrc
 source ~/.config/nvim/config/fuzzy-finder.vimrc
-source ~/.config/nvim/config/terminal.vimrc
+" source ~/.config/nvim/config/terminal.vimrc

@@ -49,8 +49,8 @@ map <Leader>r "_dhp
 
 " Navigate to buffer
 nnoremap <c-h> <c-w>h
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
+nmap <c-j> <c-w>j
+nmap <c-k> <c-w>k
 nnoremap <c-l> <c-w>l
 
 " Navigate between tabs

@@ -1,19 +1,24 @@
 {
-	"languageserver": {
-		"go": {
-			"command": "gopls",
-			"rootPatterns": ["go.mod"],
-			"trace.server": "verbose",
-			"filetypes": ["go"]
-		}
-	},
-	"coc.preferences.formatOnSaveFiletypes": [
-		"css",
-		"go",
-		"javascript",
-		"json"
-	],
-	"prettier.tabWidth": 4,
-	"prettier.useTabs": true,
-	"prettier.disableSuccessMessage": true
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "go",
+    "javascript",
+    "json",
+    "python"
+  ],
+  "coc.preferences.rootPatterns": [".git", ".hg", ".projections.json", ".vim"],
+  "diagnostic.checkCurrentLine": true,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.disableSuccessMessage": true,
+  "prettier.eslintIntegration": true,
+  "prettier.ignorePath": ".gitignore",
+  "javascript.validate.enable": true,
+  "flow.enable": false,
+  "flow.pathToFlow": "~/.local/bin/flow/flow",
+  "python.venvPath": "~/py_proj",
+  "python.linting.lintOnSave": true,
+  "python.linting.flake8Enabled": true,
+  "pyright.enable": false,
+  "jedi.enable": true
 }

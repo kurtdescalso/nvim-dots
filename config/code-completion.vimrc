@@ -4,8 +4,8 @@
 if has("nvim-0.5.0") || has("patch-8.1.1564")
   " Recently vim can merge signcolumn and number column into one
   set signcolumn=yes
-  nnoremap <nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
-  nnoremap <nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  nmap <nowait><expr> <C-j> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  nmap <nowait><expr> <C-k> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
   inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<Tab>"
   inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 endif
@@ -31,6 +31,10 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
+" Go to def, vsplit (opens new buffer on right and jumps to it)
+nmap <silent> gv :vsp<CR><Plug>(coc-definition)<C-W>l
+" Go to def, hsplit (opens new buffer below and jumps to it)
+nmap <silent> gx :sp<CR><Plug>(coc-definition)<C-W>j
 nmap <silent> gy <Plug>(coc-type-definition)
 " nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
@@ -74,3 +78,19 @@ set statusline^=%{StatusDiagnostic()}
 
 " Golang format and imports
 autocmd BufWritePre *.go :silent :call CocAction('runCommand', 'editor.action.organizeImport')
+
+" Python format
+" autocmd BufWritePre *.py execute ':Black'
+" autocmd BufWritePre *.py execute ':!autopep8 -i --aggressive --aggressive %'
+autocmd FileType python setlocal autoindent noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
+let g:formatdef_autopep8="'autopep8 --max-line-length 127 --aggressive --aggressive'"
+autocmd BufWritePre *.py execute ':Autoformat'
+
+" Javascript flow
+let g:javascript_plugin_flow = 1
+
+" JavaScript spacing
+autocmd FileType javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+
+" Python detect root for Pyright
+autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json', 'manage.py']

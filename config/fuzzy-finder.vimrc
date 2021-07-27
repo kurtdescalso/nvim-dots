@@ -10,6 +10,15 @@ local actions = require('telescope.actions')
 ------------------------------
 require('telescope').setup{
   defaults = {
+	file_ignore_patterns = {
+      "node_modules/.*",
+      "__pycache__/.*",
+      ".git/.*",
+      "plugged/.*",
+      "autoload/.*",
+	  "python3.*/.*",
+	  "bin/.*",
+	},
     mappings = {
       i = {
         -- To disable a keymap, put [map] = false
@@ -29,7 +38,6 @@ require('telescope').setup{
         -- ["<cr>"] = actions.select_default + actions.center + my_cool_custom_action,
       },
     },
-  }
+  } 
 }
 EOF
-

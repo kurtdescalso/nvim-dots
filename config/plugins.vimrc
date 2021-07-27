@@ -10,6 +10,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
 
 " # Code Completion
+" CoC
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Fetch with CocInstall:
 " JSON - coc-json
@@ -32,11 +33,27 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "  }
 "}
 
+" Python formatter
+" Plug 'psf/black', { 'branch': 'stable' }
+Plug 'Chiel92/vim-autoformat'
+
+" Additional diagnostics
+autocmd BufRead,BufNewFile *.py :silent :execute ":Plug 'iamcco/coc-diagnostic'"
+
 " Syntax-highlighting
-Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Autocloser
 Plug 'Raimondi/delimitMate'
+
+" Commenting
+Plug 'tpope/vim-commentary'
+
+" Code-folding
+" toggling
+" Plug 'tmhedberg/SimpylFold' 
+" backend
+" Plug 'Konfekt/FastFold' 
 
 " Git
 Plug 'tpope/vim-fugitive'
@@ -47,12 +64,11 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
 " Statusline
-" Plug 'itchyny/lightline.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Terminal wrapper
-Plug 'akinsho/nvim-toggleterm.lua'
+" Plug 'akinsho/nvim-toggleterm.lua'
 
 " Colorscheme
 " Plug 'morhetz/gruvbox'
