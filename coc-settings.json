@@ -3,22 +3,26 @@
     "css",
     "go",
     "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
     "json",
     "python"
   ],
   "coc.preferences.rootPatterns": [".git", ".hg", ".projections.json", ".vim"],
   "diagnostic.checkCurrentLine": true,
+  "snippets.extends": {
+    "javascriptreact": ["javascript"],
+    "typescriptreact": ["javascript"],
+    "typescript": ["javascript"]
+  },
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
   "prettier.disableSuccessMessage": true,
-  "prettier.eslintIntegration": true,
+  "prettier.eslintIntegration": false,
   "prettier.ignorePath": ".gitignore",
   "javascript.validate.enable": true,
   "flow.enable": false,
   "flow.pathToFlow": "~/.local/bin/flow/flow",
-  "python.venvPath": "~/py_proj",
-  "python.linting.lintOnSave": true,
-  "python.linting.flake8Enabled": true,
-  "pyright.enable": false,
   "jedi.enable": true
 }

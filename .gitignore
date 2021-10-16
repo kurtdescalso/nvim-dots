@@ -1,3 +1,5 @@
 autoload
 init.vim.bak
 plugged
+.vim/
+coc-settings.json.bak

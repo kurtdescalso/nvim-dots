@@ -90,7 +90,7 @@ autocmd BufWritePre *.py execute ':Autoformat'
 let g:javascript_plugin_flow = 1
 
 " JavaScript spacing
-autocmd FileType javascript setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType javascript,javascriptreact,typescript,typescriptreact setlocal expandtab tabstop=2 shiftwidth=2 softtabstop=2
 
 " Python detect root for Pyright
 autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json', 'manage.py']

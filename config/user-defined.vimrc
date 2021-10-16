@@ -23,6 +23,10 @@ let @s="s\"\"hp"
 map <Leader>s 0v$h@s
 " - wrap highlighted text in parens
 let @p="s\(\)hp"
+" - wrap highlighted text in brackets
+" let @\[="s\[\]hp"
+" - wrap highlighted text in braces
+" let @\{="s\{\}hp"
 
 " Possessive form
 " - insert missing apostrophe (for words ending with 's' and 'not' contractions)
