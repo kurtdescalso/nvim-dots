@@ -17,4 +17,16 @@ let g:airline#extensions#tabline#formatter = 'unique_tail'
 let g:airline#extensions#tabline#left_sep = "\ue0b0"
 let g:airline#extensions#tabline#left_alt_sep = "\ue0bb"
 
+" let g:airline#parts#ffenc#skip_expected_string='utf-8[unix]'
+" remove the filetype part
+let g:airline_section_x=''
+" remove the encoding part
+let g:airline_section_y=''
+" remove separators for empty sections
+let g:airline_skip_empty_sections = 1
+
+" Caches the changes to the highlighting groups, should therefore be faster.
+" Set this to one, if you experience a sluggish Vim: >
+let g:airline_highlighting_cache = 0
+
 set noshowmode " hide '-- INSERT --' below statusline (redundant)

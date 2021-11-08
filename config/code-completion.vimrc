@@ -80,11 +80,11 @@ set statusline^=%{StatusDiagnostic()}
 autocmd BufWritePre *.go :silent :call CocAction('runCommand', 'editor.action.organizeImport')
 
 " Python format
-" autocmd BufWritePre *.py execute ':Black'
-" autocmd BufWritePre *.py execute ':!autopep8 -i --aggressive --aggressive %'
-autocmd FileType python setlocal autoindent noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
-let g:formatdef_autopep8="'autopep8 --max-line-length 127 --aggressive --aggressive'"
-autocmd BufWritePre *.py execute ':Autoformat'
+autocmd BufWritePre *.py execute ':Black'
+" autocmd BufWritePre *.py :silent execute ':!autopep8 -i --aggressive --aggressive %'
+autocmd FileType python setlocal autoindent expandtab tabstop=4 shiftwidth=4 softtabstop=4
+" let g:formatdef_autopep8="'autopep8 --max-line-length 127 --aggressive --aggressive'"
+" autocmd BufWritePre *.py execute ':Autoformat'
 
 " Javascript flow
 let g:javascript_plugin_flow = 1

@@ -6,8 +6,7 @@
     "javascriptreact",
     "typescript",
     "typescriptreact",
-    "json",
-    "python"
+    "json"
   ],
   "coc.preferences.rootPatterns": [".git", ".hg", ".projections.json", ".vim"],
   "diagnostic.checkCurrentLine": true,

@@ -34,6 +34,8 @@ require('telescope').setup{
         ["<c-x>"] = actions.select_horizontal + actions.center,
         ["<c-v>"] = actions.select_vertical + actions.center,
 
+        ["<c-k>"] = actions.preview_scrolling_up,
+        ["<c-j>"] = actions.preview_scrolling_down,
         -- You can perform as many actions in a row as you like
         -- ["<cr>"] = actions.select_default + actions.center + my_cool_custom_action,
       },

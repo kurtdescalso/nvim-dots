@@ -2,8 +2,8 @@
 let g:lua_tree_side = 'left'
 let g:lua_tree_width = 30
 let g:lua_tree_ignore = [ '.git', 'node_modules', '.cache' ] "empty by default
-let g:lua_tree_auto_open = 1 "0 by default, opens the tree when typing `vim $DIR` or `vim`
-let g:lua_tree_auto_close = 0 "0 by default, closes the tree when it's the last window
+" let g:lua_tree_auto_open = 1 "0 by default, opens the tree when typing `vim $DIR` or `vim`
+" let g:lua_tree_auto_close = 0 "0 by default, closes the tree when it's the last window
 let g:lua_tree_follow = 1 "0 by default, this option allows the cursor to be updated when entering a buffer
 let g:lua_tree_indent_markers = 1 "0 by default, this option shows indent markers when folders are open
 let g:lua_tree_hide_dotfiles = 1 "0 by default, this option hides files and folders starting with a dot `.`
@@ -24,25 +24,25 @@ let g:lua_tree_show_icons = {
 " NOTE: the 'edit' key will wrap/unwrap a folder and open a file
 " Override L
 nmap L <Nop>
-let g:lua_tree_bindings = {
-    \ 'edit':            ['<CR>','o'],
-    \ 'edit_vsplit':     '<C-v>',
-    \ 'edit_split':      '<C-x>',
-    \ 'edit_tab':        '<C-t>',
-    \ 'toggle_ignored':  'I',
-    \ 'toggle_dotfiles': 'H',
-    \ 'refresh':         'R',
-    \ 'preview':         '<Tab>',
-    \ 'cd':              '<C-]>',
-    \ 'create':          'a',
-    \ 'remove':          'd',
-    \ 'rename':          'r',
-    \ 'cut':             'x',
-    \ 'copy':            'c',
-    \ 'paste':           'p',
-    \ 'prev_git_item':   '[c',
-    \ 'next_git_item':   ']c',
-	\ }
+" let g:lua_tree_bindings = {
+"     \ 'edit':            ['<CR>','o'],
+"     \ 'edit_vsplit':     '<C-v>',
+"     \ 'edit_split':      '<C-x>',
+"     \ 'edit_tab':        '<C-t>',
+"     \ 'toggle_ignored':  'I',
+"     \ 'toggle_dotfiles': 'H',
+"     \ 'refresh':         'R',
+"     \ 'preview':         '<Tab>',
+"     \ 'cd':              '<C-]>',
+"     \ 'create':          'a',
+"     \ 'remove':          'd',
+"     \ 'rename':          'r',
+"     \ 'cut':             'x',
+"     \ 'copy':            'c',
+"     \ 'paste':           'p',
+"     \ 'prev_git_item':   '[c',
+"     \ 'next_git_item':   ']c',
+" 	\ }
 
 " Disable default mappings by plugin
 " Bindings are enable by default, disabled on any non-zero value
@@ -78,3 +78,9 @@ set termguicolors " this variable must be enabled for colors to be applied prope
 
 " a list of groups can be found at `:help lua_tree_highlight`
 highlight LuaTreeFolderIcon guibg=blue
+
+" Disable statusline
+" function! DisableST()
+"   return " "
+" endfunction
+" au BufEnter NvimTree setlocal statusline=%!DisableST()

@@ -34,8 +34,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "}
 
 " Python formatter
-" Plug 'psf/black', { 'branch': 'stable' }
-Plug 'Chiel92/vim-autoformat'
+Plug 'psf/black', { 'branch': 'stable' }
+" Plug 'Chiel92/vim-autoformat'
 
 " Additional diagnostics
 autocmd BufRead,BufNewFile *.py :silent :execute ":Plug 'iamcco/coc-diagnostic'"
