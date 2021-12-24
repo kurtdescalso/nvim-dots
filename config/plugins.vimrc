@@ -77,5 +77,11 @@ Plug 'vim-airline/vim-airline-themes'
 " Plug 'danilo-augusto/vim-afterglow'
 Plug 'mhartington/oceanic-next'
 
+" Percentile scrolloff
+Plug 'drzel/vim-scrolloff-fraction'
+
+" Code minimap
+Plug 'wfxr/minimap.vim'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()

@@ -4,6 +4,9 @@ set number
 set shiftwidth=4
 set tabstop=4
 
+" set scrolloff=15 " center cursor when scrolling
+let g:scrolloff_fraction = 0.2
+
 " For Neovim 0.1.3 and 0.1.4
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
