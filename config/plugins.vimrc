@@ -83,5 +83,9 @@ Plug 'drzel/vim-scrolloff-fraction'
 " Code minimap
 Plug 'wfxr/minimap.vim'
 
+
+" Symbols outline
+Plug 'simrat39/symbols-outline.nvim'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()

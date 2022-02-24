@@ -29,4 +29,6 @@ let g:airline_skip_empty_sections = 1
 " Set this to one, if you experience a sluggish Vim: >
 let g:airline_highlighting_cache = 0
 
+let g:airline_exclude_filetypes = ['NvimTree', 'minimap']
+
 set noshowmode " hide '-- INSERT --' below statusline (redundant)
