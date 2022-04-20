@@ -73,9 +73,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Colorscheme
 " Plug 'morhetz/gruvbox'
 " Plug 'NLKNguyen/papercolor-theme'
-" Plug 'owozsh/amora'
+Plug 'owozsh/amora'
 " Plug 'danilo-augusto/vim-afterglow'
-Plug 'mhartington/oceanic-next'
+" Plug 'mhartington/oceanic-next'
 
 " Percentile scrolloff
 Plug 'drzel/vim-scrolloff-fraction'
@@ -86,6 +86,15 @@ Plug 'wfxr/minimap.vim'
 
 " Symbols outline
 Plug 'simrat39/symbols-outline.nvim'
+
+" Inline Git blame
+Plug 'APZelos/blamer.nvim'
+
+" Colored comments
+" Plug 'jbgutierrez/vim-better-comments'
+
+" Colored comments
+Plug 'folke/todo-comments.nvim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()

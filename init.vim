@@ -10,6 +10,8 @@ source ~/.config/nvim/config/snippets.vimrc
 source ~/.config/nvim/config/autocloser.vimrc
 source ~/.config/nvim/config/fuzzy-finder.vimrc
 source ~/.config/nvim/config/minimap.vimrc
+source ~/.config/nvim/config/git-blamer.vimrc
 source ~/.config/nvim/lua/symbols-outline.vimrc
+source ~/.config/nvim/lua/colored-comments.vimrc
 " source ~/.config/nvim/lua/symbols-outline.vimrc
 " source ~/.config/nvim/config/terminal.vimrc

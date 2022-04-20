@@ -1,4 +1,5 @@
-let g:airline_theme='powerlineish'
+" let g:airline_theme='powerlineish'
+let g:airline_theme='luna'
 
 function! AirlineThemePatch(palette)
   let a:palette.normal.airline_error = [ '#ffffff', '#ff0000', 232, 92 ]
