@@ -94,7 +94,7 @@ Plug 'APZelos/blamer.nvim'
 " Plug 'jbgutierrez/vim-better-comments'
 
 " Colored comments
-Plug 'folke/todo-comments.nvim'
+" Plug 'folke/todo-comments.nvim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()

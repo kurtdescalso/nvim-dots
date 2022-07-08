@@ -19,11 +19,11 @@ let g:lua_tree_show_icons = {
 "1 by default, notice that if 'files' is 1, it will only display
 "if nvim-web-devicons is installed and on your runtimepath
 
-let g:nvim_tree_window_picker_exclude = {
-    \   'filetype': [
-    \     'minimap'
-    \   ]
-	\ }
+" let g:nvim_tree_window_picker_exclude = {
+"     \   'filetype': [
+"     \     'minimap'
+"     \   ]
+" 	\ }
 
 " You can edit keybindings be defining this variable
 " You don't have to define all keys.

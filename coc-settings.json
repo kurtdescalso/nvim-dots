@@ -17,8 +17,6 @@
   },
   "prettier.tabWidth": 2,
   "prettier.useTabs": false,
-  "prettier.disableSuccessMessage": true,
-  "prettier.eslintIntegration": false,
   "prettier.ignorePath": ".gitignore",
   "javascript.validate.enable": true,
   "flow.enable": false,
