@@ -94,3 +94,6 @@ autocmd FileType javascript,javascriptreact,typescript,typescriptreact setlocal 
 
 " Python detect root for Pyright
 autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.venv', 'setup.cfg', 'setup.py', 'pyproject.toml', 'pyrightconfig.json', 'manage.py']
+
+" Vue support
+autocmd BufReadPost,BufNewFile *.vue setlocal filetype=vue

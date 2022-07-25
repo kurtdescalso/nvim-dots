@@ -96,5 +96,11 @@ Plug 'APZelos/blamer.nvim'
 " Colored comments
 " Plug 'folke/todo-comments.nvim'
 
+" Image previewer
+Plug 'edluffy/hologram.nvim'
+
+" Vue plugin
+Plug 'posva/vim-vue'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
