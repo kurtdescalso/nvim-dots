@@ -65,4 +65,4 @@ nmap <leader>w :tabp <CR>
 nmap <leader>e :tabn <CR>
 
 " Clear search highlight from normal mode
-nnoremap <esc> :noh <CR>
+nnoremap <silent> <esc> :noh <CR>

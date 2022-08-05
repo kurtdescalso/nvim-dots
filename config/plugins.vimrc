@@ -100,7 +100,10 @@ Plug 'APZelos/blamer.nvim'
 Plug 'edluffy/hologram.nvim'
 
 " Vue plugin
-Plug 'posva/vim-vue'
+" Plug 'posva/vim-vue'
+
+" Vue plugin 2
+Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
