@@ -38,7 +38,7 @@ Plug 'psf/black', { 'branch': 'stable' }
 " Plug 'Chiel92/vim-autoformat'
 
 " Additional diagnostics
-autocmd BufRead,BufNewFile *.py :silent :execute ":Plug 'iamcco/coc-diagnostic'"
+" autocmd BufRead,BufNewFile *.py :silent :execute ":Plug 'iamcco/coc-diagnostic'"
 
 " Syntax-highlighting
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -81,11 +81,11 @@ Plug 'owozsh/amora'
 Plug 'drzel/vim-scrolloff-fraction'
 
 " Code minimap
-Plug 'wfxr/minimap.vim'
+" Plug 'wfxr/minimap.vim'
 
 
 " Symbols outline
-Plug 'simrat39/symbols-outline.nvim'
+" Plug 'simrat39/symbols-outline.nvim'
 
 " Inline Git blame
 Plug 'APZelos/blamer.nvim'
