@@ -57,6 +57,7 @@ Plug 'tpope/vim-commentary'
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 " Telescope
 Plug 'nvim-lua/popup.nvim'
