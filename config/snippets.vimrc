@@ -9,5 +9,5 @@ function! s:CheckBackspace() abort
   return !col || getline('.')[col - 1] =~# '\s'
 endfunction
 
-let g:coc_snippet_next = '<tab>'
-let g:coc_snippet_prev = '<S-tab>'
+let g:coc_snippet_next = '<A-j>'
+let g:coc_snippet_prev = '<A-k>'
