@@ -106,5 +106,8 @@ Plug 'edluffy/hologram.nvim'
 " Vue plugin 2
 Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
 
+" Rust
+Plug 'rust-lang/rust.vim'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()

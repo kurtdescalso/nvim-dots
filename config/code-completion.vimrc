@@ -123,3 +123,7 @@ autocmd FileType python let b:coc_root_patterns = ['.git', '.env', 'venv', '.ven
 
 " Vue support
 autocmd BufReadPost,BufNewFile *.vue setlocal filetype=vue
+
+" Rust support
+syntax enable
+filetype plugin indent on

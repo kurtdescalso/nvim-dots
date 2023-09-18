@@ -28,7 +28,7 @@ let g:airline_skip_empty_sections = 1
 
 " Caches the changes to the highlighting groups, should therefore be faster.
 " Set this to one, if you experience a sluggish Vim: >
-let g:airline_highlighting_cache = 0
+let g:airline_highlighting_cache = 1
 
 let g:airline_exclude_filetypes = ['NvimTree', 'minimap']
 
