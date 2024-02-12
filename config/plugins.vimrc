@@ -104,7 +104,7 @@ Plug 'edluffy/hologram.nvim'
 " Plug 'posva/vim-vue'
 
 " Vue plugin 2
-Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
+" Plug 'yaegassy/coc-volar', {'do': 'yarn install --frozen-lockfile'}
 
 " Rust
 Plug 'rust-lang/rust.vim'

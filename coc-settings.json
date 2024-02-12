@@ -1,15 +1,6 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-    "css",
-    "go",
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "json",
-    "vue"
-  ],
-  "coc.preferences.rootPatterns": [".git", ".hg", ".projections.json", ".vim"],
+  "coc.preferences.formatOnSave": true,
+  "workspace.rootPatterns": [".git", ".hg", ".projections.json", ".vim"],
   "diagnostic.checkCurrentLine": true,
   "snippets.extends": {
     "javascriptreact": ["javascript"],
@@ -22,9 +13,6 @@
   "prettier.singleQuote": true,
   "prettier.jsxSingleQuote": true,
   "javascript.validate.enable": true,
-  "flow.enable": false,
-  "flow.pathToFlow": "~/.local/bin/flow/flow",
-  "jedi.enable": true,
   "prettier.disableLanguages": ["vue", "vuejs"],
   "snippets.ultisnips.pythonPrompt": false,
   "python.linting.pylintArgs": [
